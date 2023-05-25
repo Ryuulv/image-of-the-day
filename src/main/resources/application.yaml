@@ -1,0 +1,26 @@
+project:
+  name: '@project.artifactId@'
+  version: '@project.version@'
+  description: '@project.description@'
+info:
+  build:
+    artifact: "@project.artifactId@"
+    name: "@project.name@"
+    description: '@project.description@'
+    version: '@project.version@'
+
+spring:
+  banner:
+    charset: ${SPRING_BANNER_CHARSET}
+    location: ${SPRING_BANNER_LOCATION}
+  output:
+    ansi:
+      enabled: ${SPRING_OUTPUT_ANSI_ENABLE}
+
+
+logging:
+  level:
+    br.senac.go: debug
+    org.springframework.web: info
+
+
